@@ -345,19 +345,5 @@
     </div>
 </body>
 
-  function sortThem(s) {
-    Array.prototype.slice.call(document.body.querySelectorAll(s)).sort(function sort (ea, eb) {
-        var a = ea.textContent.trim();
-        var b = eb.textContent.trim();
-        if (a.textContent < b.textContent) return -1;
-        if (a.textContent > b.textContent) return 1;
-        return 0;
-    }).forEach(function(div) {
-        div.parentElement.appendChild(div);
-    });
-}
-// call it like this
-sortThem('div.member');
-  
   
 </html>
